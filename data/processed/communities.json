@@ -1,0 +1,166 @@
+[
+  {
+    "id": 0,
+    "primaryGenre": "Action",
+    "size": 710,
+    "topAnime": [
+      "Shingeki no Kyojin",
+      "Kimetsu no Yaiba",
+      "Jujutsu Kaisen",
+      "Boku no Hero Academia",
+      "HUNTER×HUNTER (2011)"
+    ]
+  },
+  {
+    "id": 1,
+    "primaryGenre": "Adventure",
+    "size": 95,
+    "topAnime": [
+      "No Game No Life",
+      "Kono Subarashii Sekai ni Shukufuku wo!",
+      "Sen to Chihiro no Kamikakushi",
+      "Mushoku Tensei: Isekai Ittara Honki Dasu",
+      "Made in Abyss"
+    ]
+  },
+  {
+    "id": 2,
+    "primaryGenre": "Comedy",
+    "size": 404,
+    "topAnime": [
+      "Haikyuu!!",
+      "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+      "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+      "Toradora!",
+      "Horimiya"
+    ]
+  },
+  {
+    "id": 3,
+    "primaryGenre": "Drama",
+    "size": 212,
+    "topAnime": [
+      "Kimi no Na wa.",
+      "Koe no Katachi",
+      "Yakusoku no Neverland",
+      "Shigatsu wa Kimi no Uso",
+      "Boku dake ga Inai Machi"
+    ]
+  },
+  {
+    "id": 4,
+    "primaryGenre": "Fantasy",
+    "size": 17,
+    "topAnime": [
+      "Paprika",
+      "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen",
+      "Shadows House",
+      "Kinsou no Vermeil: Gakeppuchi Majutsushi wa Saikyou no Yakusai to Mahou Sekai wo Tsuki Susumu",
+      "Mononoke"
+    ]
+  },
+  {
+    "id": 5,
+    "primaryGenre": "Horror",
+    "size": 12,
+    "topAnime": [
+      "Another",
+      "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei - The Animation",
+      "Higurashi no Naku Koro ni",
+      "Shiki",
+      "Gakkou Gurashi!"
+    ]
+  },
+  {
+    "id": 6,
+    "primaryGenre": "Mystery",
+    "size": 9,
+    "topAnime": [
+      "DEATH NOTE",
+      "Hyouka",
+      "Nazo no Kanojo X",
+      "Shoushimin Series",
+      "Hyouka: Motsubeki Mono wa"
+    ]
+  },
+  {
+    "id": 7,
+    "primaryGenre": "Psychological",
+    "size": 4,
+    "topAnime": [
+      "Gyakkyou Burai Kaiji: Ultimate Survivor",
+      "Liar Liar",
+      "Gyakkyou Burai Kaiji: Hakairoku-hen",
+      "One Outs"
+    ]
+  },
+  {
+    "id": 8,
+    "primaryGenre": "Romance",
+    "size": 15,
+    "topAnime": [
+      "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
+      "Yubisaki to Renren",
+      "Ao no Hako",
+      "Tamako Love Story",
+      "Kimi wa Houkago Insomnia"
+    ]
+  },
+  {
+    "id": 9,
+    "primaryGenre": "Sci-Fi",
+    "size": 4,
+    "topAnime": [
+      "Shelter",
+      "Shuumatsu no Harem",
+      "Mahouka Koukou no Rettousei: Hoshi wo Yobu Shoujo",
+      "So Ra No Wo To"
+    ]
+  },
+  {
+    "id": 10,
+    "primaryGenre": "Slice of Life",
+    "size": 15,
+    "topAnime": [
+      "Barakamon",
+      "Non Non Biyori",
+      "Love Live! School idol project",
+      "Demi-chan wa Kataritai",
+      "Usagi Drop"
+    ]
+  },
+  {
+    "id": 11,
+    "primaryGenre": "Sports",
+    "size": 3,
+    "topAnime": [
+      "Aoashi",
+      "Diamond no Ace",
+      "Inazuma Eleven"
+    ]
+  },
+  {
+    "id": 12,
+    "primaryGenre": "Unknown",
+    "size": 0,
+    "topAnime": []
+  },
+  {
+    "id": 13,
+    "primaryGenre": "Unknown",
+    "size": 0,
+    "topAnime": []
+  },
+  {
+    "id": 14,
+    "primaryGenre": "Unknown",
+    "size": 0,
+    "topAnime": []
+  },
+  {
+    "id": 15,
+    "primaryGenre": "Unknown",
+    "size": 0,
+    "topAnime": []
+  }
+]

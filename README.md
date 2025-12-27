@@ -35,7 +35,26 @@ This project creates an interactive map where each dot represents an anime title
 - Spatial indexing for efficient hover detection
 - Color-coded communities with dynamic sizing
 
-## Installation
+## Quick Start
+
+```bash
+npm install                    # Install dependencies
+npm run collect                # Fetch anime data (3-5 min)
+npm run compute                # Calculate similarities (2-3 min)
+npm run layout                 # Generate positions (2-3 min)
+cp data/processed/layout.compact.json public/data/processed/
+npm run dev                    # Start visualization
+```
+
+Open http://localhost:3000 - Done! 🎉
+
+**📚 Documentation:**
+- **[QUICK_START.md](QUICK_START.md)** - Get started in 10 minutes
+- **[WORKFLOW.md](WORKFLOW.md)** - Complete technical documentation
+
+---
+
+## Detailed Installation
 
 ```bash
 npm install

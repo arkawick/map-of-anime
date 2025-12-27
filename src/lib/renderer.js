@@ -168,9 +168,9 @@ export class AnimeMapRenderer {
       this.positions[i * 2] = node.x;
       this.positions[i * 2 + 1] = node.y;
 
-      // Size based on popularity
+      // Size based on popularity (increased size)
       const normalizedPop = Math.log(node.p || 1) / Math.log(1000000);
-      this.sizes[i] = 3 + normalizedPop * 5;
+      this.sizes[i] = 8 + normalizedPop * 12;
 
       // Color based on community
       const color = communityColors[node.c % communityColors.length];
@@ -264,7 +264,17 @@ export class AnimeMapRenderer {
       }
     });
 
-    this.canvas.addEventListener('mouseup', () => {
+    this.canvas.addEventListener('mouseup', (e) => {
+      if (!isDragging) {
+        // Click without drag - select node
+        this.updateHover(e.clientX, e.clientY);
+        if (this.hoveredNode) {
+          this.focusNode(this.hoveredNode);
+          if (this.onClick) {
+            this.onClick(this.hoveredNode);
+          }
+        }
+      }
       isDragging = false;
     });
 

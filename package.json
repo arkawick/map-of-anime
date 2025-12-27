@@ -4,12 +4,14 @@
   "description": "Interactive map of anime based on viewer similarity",
   "main": "index.js",
   "scripts": {
-    "collect": "node scripts/collect-data.js",
-    "compute": "node scripts/compute-similarity.js",
+    "collect": "node scripts/collect-data-metadata.js",
+    "compute": "node scripts/compute-similarity-metadata.js",
     "layout": "node scripts/generate-layout.js",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "collect:old": "node scripts/collect-data.js",
+    "compute:old": "node scripts/compute-similarity.js"
   },
   "keywords": ["anime", "visualization", "graph", "webgl"],
   "author": "",

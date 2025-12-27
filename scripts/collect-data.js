@@ -5,7 +5,7 @@ const path = require('path');
 const ANILIST_API = 'https://graphql.anilist.co';
 const DATA_DIR = path.join(__dirname, '../data/raw');
 const BATCH_SIZE = 50;
-const DELAY_MS = 1000; // Rate limiting delay
+const DELAY_MS = 1500; // Rate limiting delay (increased to avoid rate limits)
 
 // Ensure data directory exists
 async function ensureDir(dir) {
@@ -72,7 +72,7 @@ query ($animeId: Int, $page: Int) {
 }
 `;
 
-async function makeRequest(query, variables, retries = 3) {
+async function makeRequest(query, variables, retries = 5) {
   for (let i = 0; i < retries; i++) {
     try {
       const response = await axios.post(ANILIST_API, {
@@ -92,16 +92,29 @@ async function makeRequest(query, variables, retries = 3) {
         continue;
       }
 
+      if (!response.data.data) {
+        console.error('No data in response:', response.data);
+        if (i === retries - 1) throw new Error('No data in response');
+        await sleep(DELAY_MS * (i + 1));
+        continue;
+      }
+
       return response.data.data;
     } catch (error) {
       if (error.response?.status === 429) {
-        console.log(`Rate limited, waiting ${DELAY_MS * (i + 2)}ms...`);
-        await sleep(DELAY_MS * (i + 2));
-      } else if (i === retries - 1) {
-        throw error;
+        const waitTime = DELAY_MS * Math.pow(2, i + 1);
+        console.log(`Rate limited, waiting ${waitTime}ms...`);
+        await sleep(waitTime);
+      } else {
+        console.error(`Request error (attempt ${i + 1}/${retries}):`, error.message);
+        if (i === retries - 1) {
+          throw error;
+        }
+        await sleep(DELAY_MS * (i + 1));
       }
     }
   }
+  throw new Error('All retries failed');
 }
 
 function sleep(ms) {
@@ -116,28 +129,48 @@ async function fetchAllAnime() {
 
   while (hasNextPage) {
     console.log(`Fetching page ${currentPage}...`);
-    const data = await makeRequest(ANIME_QUERY, {
-      page: currentPage,
-      perPage: BATCH_SIZE
-    });
 
-    const { media, pageInfo } = data.Page;
-    allAnime.push(...media);
+    try {
+      const data = await makeRequest(ANIME_QUERY, {
+        page: currentPage,
+        perPage: BATCH_SIZE
+      });
 
-    console.log(`Fetched ${media.length} anime (total: ${allAnime.length}/${pageInfo.total})`);
+      if (!data || !data.Page) {
+        console.error('Invalid response structure');
+        break;
+      }
 
-    hasNextPage = pageInfo.hasNextPage;
-    currentPage++;
+      const { media, pageInfo } = data.Page;
+      allAnime.push(...media);
 
-    // Save progress periodically
-    if (currentPage % 10 === 0) {
+      console.log(`Fetched ${media.length} anime (total: ${allAnime.length}/${pageInfo.total})`);
+
+      hasNextPage = pageInfo.hasNextPage;
+      currentPage++;
+
+      // Save progress periodically
+      if (currentPage % 10 === 0) {
+        await fs.writeFile(
+          path.join(DATA_DIR, 'anime_partial.json'),
+          JSON.stringify(allAnime, null, 2)
+        );
+        console.log(`Progress saved (${allAnime.length} anime)`);
+      }
+
+      await sleep(DELAY_MS);
+    } catch (error) {
+      console.error(`Error fetching page ${currentPage}:`, error.message);
+      console.log(`Saving partial data (${allAnime.length} anime)...`);
+
+      // Save what we have so far
       await fs.writeFile(
         path.join(DATA_DIR, 'anime_partial.json'),
         JSON.stringify(allAnime, null, 2)
       );
-    }
 
-    await sleep(DELAY_MS);
+      throw error;
+    }
   }
 
   console.log(`Completed! Fetched ${allAnime.length} total anime.`);
@@ -232,19 +265,44 @@ async function main() {
   // Step 1: Fetch all anime
   let anime;
   const animeFile = path.join(DATA_DIR, 'anime.json');
+  const animePartialFile = path.join(DATA_DIR, 'anime_partial.json');
+
   try {
     const existing = await fs.readFile(animeFile, 'utf-8');
     anime = JSON.parse(existing);
     console.log(`Loaded ${anime.length} anime from existing file.`);
   } catch {
-    anime = await fetchAllAnime();
+    try {
+      // Try to load partial data
+      const partial = await fs.readFile(animePartialFile, 'utf-8');
+      anime = JSON.parse(partial);
+      console.log(`Found partial data with ${anime.length} anime.`);
+      console.log('You can continue with this data or restart to fetch more.\n');
+    } catch {
+      try {
+        anime = await fetchAllAnime();
+      } catch (error) {
+        console.error('\nData collection failed, but partial data may be available.');
+        // Try to load what we saved
+        try {
+          const partial = await fs.readFile(animePartialFile, 'utf-8');
+          anime = JSON.parse(partial);
+          console.log(`Using partial data with ${anime.length} anime.`);
+        } catch {
+          throw new Error('No data available. Please try again.');
+        }
+      }
+    }
   }
 
   // Step 2: Collect user lists for top anime
-  // For full implementation, start with top 2000 most popular anime
-  // This can be expanded later
-  const topAnime = anime.slice(0, 2000);
-  await collectUserLists(topAnime, 2000);
+  // For full implementation, use 1500 anime (takes ~4-6 hours)
+  // For quick testing, use 200-300 anime (takes ~30-45 minutes)
+  const targetCount = Math.min(200, anime.length); // CHANGE THIS: 200 for quick test, 1500 for full map
+  console.log(`\nWill collect user data for top ${targetCount} anime...`);
+
+  const topAnime = anime.slice(0, targetCount);
+  await collectUserLists(topAnime, targetCount);
 
   console.log('\n=== Data collection complete! ===');
   console.log('Next step: Run "npm run compute" to calculate similarities');

@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:github.com)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(node -e:*)",
+      "Bash(node check-data.js:*)",
+      "Bash(npm run compute:*)",
+      "Bash(npm run layout:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)"
     ]
   }
 }
