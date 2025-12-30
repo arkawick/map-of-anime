@@ -29,17 +29,26 @@ async function generateLayout() {
     });
   });
 
-  // Add edges
+  // Add edges (filter weak connections for better layout)
   console.log('Adding edges to graph...');
+  const MIN_EDGE_WEIGHT = 0.3; // Only include stronger connections
+  let addedEdges = 0;
+
   graphData.edges.forEach((edge, index) => {
     try {
-      graph.addEdge(edge.source, edge.target, {
-        weight: edge.weight
-      });
+      const weight = edge.weight || 1;
+      if (weight >= MIN_EDGE_WEIGHT) {
+        graph.addEdge(edge.source, edge.target, {
+          weight: weight
+        });
+        addedEdges++;
+      }
     } catch (err) {
       // Skip duplicate edges or edges with missing nodes
     }
   });
+
+  console.log(`Filtered to ${addedEdges} strong edges (from ${graphData.edges.length})`);
 
   console.log(`Graph initialized with ${graph.order} nodes and ${graph.size} edges\n`);
 
@@ -48,17 +57,17 @@ async function generateLayout() {
   console.log('This may take several minutes for large graphs...\n');
 
   const settings = {
-    iterations: 500,
+    iterations: 1000,
     settings: {
       barnesHutOptimize: true,
       strongGravityMode: false,
-      gravity: 0.05,
-      scalingRatio: 10,
+      gravity: 0.005,  // Very weak gravity for maximum spread
+      scalingRatio: 200,  // Much stronger repulsion
       slowDown: 1,
-      linLogMode: false,
-      outboundAttractionDistribution: false,
+      linLogMode: true,  // Better cluster separation
+      outboundAttractionDistribution: true,  // Helps spread hubs
       adjustSizes: false,
-      edgeWeightInfluence: 1
+      edgeWeightInfluence: 0.5  // Reduce edge influence
     }
   };
 
@@ -88,7 +97,7 @@ async function generateLayout() {
 
   const rangeX = maxX - minX;
   const rangeY = maxY - minY;
-  const scale = 10000; // Scale to 10000x10000 space
+  const scale = 20000; // Scale to 20000x20000 space for more room
 
   // Extract positioned nodes
   const positionedNodes = [];

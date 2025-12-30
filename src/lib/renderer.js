@@ -344,7 +344,7 @@ export class AnimeMapRenderer {
       this.render();
 
       if (this.onHover) {
-        this.onHover(nearest);
+        this.onHover(nearest, clientX, clientY);
       }
     }
   }

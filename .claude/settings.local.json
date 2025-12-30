@@ -8,7 +8,14 @@
       "Bash(npm run compute:*)",
       "Bash(npm run layout:*)",
       "Bash(ls:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm run collect:*)",
+      "WebFetch(domain:www.malmap.net)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(cat:*)"
     ]
   }
 }

@@ -68,7 +68,8 @@
 
 <script>
 import { ref, onMounted, onUnmounted, computed } from 'vue';
-import { AnimeMapRenderer } from './lib/renderer.js';
+import { AnimeMapRenderer } from './lib/renderer-pixi.js';
+import * as PIXI from 'pixi.js';
 
 export default {
   name: 'App',
@@ -86,6 +87,7 @@ export default {
 
     let renderer = null;
     let animationFrameId = null;
+    let zoomAnimationFrameId = null;
 
     const loadData = async () => {
       try {
@@ -115,16 +117,27 @@ export default {
 
         renderer = new AnimeMapRenderer(canvas.value, data);
 
-        renderer.onHover = (node) => {
+        renderer.onHover = (node, mouseX, mouseY) => {
           hoveredAnime.value = node;
+          if (node) {
+            tooltipStyle.value = {
+              left: `${mouseX + 15}px`,
+              top: `${mouseY + 15}px`
+            };
+          }
         };
 
-        const animate = () => {
-          renderer.render();
-          animationFrameId = requestAnimationFrame(animate);
-        };
-
-        animate();
+        // Wait for PIXI to initialize
+        await new Promise(resolve => {
+          const checkInit = () => {
+            if (renderer.initialized) {
+              resolve();
+            } else {
+              setTimeout(checkInit, 50);
+            }
+          };
+          checkInit();
+        });
 
         loading.value = false;
       } catch (err) {
@@ -157,11 +170,14 @@ export default {
     };
 
     const resetView = () => {
-      if (renderer) {
-        renderer.camera.x = renderer.data.bounds.width / 2;
-        renderer.camera.y = renderer.data.bounds.height / 2;
-        renderer.camera.zoom = 0.1;
-        zoomPercent.value = 10;
+      if (renderer && renderer.viewport) {
+        const centerX = renderer.data.bounds.width / 2;
+        const centerY = renderer.data.bounds.height / 2;
+        renderer.viewport.animate({
+          position: new PIXI.Point(centerX, centerY),
+          scale: 0.1,
+          time: 500
+        });
       }
     };
 
@@ -177,15 +193,15 @@ export default {
         if (renderer) {
           zoomPercent.value = Math.round(renderer.camera.zoom * 100);
         }
-        requestAnimationFrame(updateZoom);
+        zoomAnimationFrameId = requestAnimationFrame(updateZoom);
       };
       updateZoom();
     });
 
     onUnmounted(() => {
       window.removeEventListener('resize', handleResize);
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
+      if (zoomAnimationFrameId) {
+        cancelAnimationFrame(zoomAnimationFrameId);
       }
       if (renderer) {
         renderer.destroy();

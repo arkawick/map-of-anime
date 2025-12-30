@@ -1,8 +1,47 @@
 [
   {
-    "id": 0,
+    "id": 1,
+    "size": 613,
     "primaryGenre": "Action",
-    "size": 710,
+    "topGenres": [
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "topAnime": [
+      "DEATH NOTE",
+      "Boku no Hero Academia 2",
+      "Shingeki no Kyojin: The Final Season",
+      "Darling in the Franxx",
+      "Code Geass: Hangyaku no Lelouch"
+    ]
+  },
+  {
+    "id": 3,
+    "size": 555,
+    "primaryGenre": "Fantasy",
+    "topGenres": [
+      "Fantasy",
+      "Adventure",
+      "Action"
+    ],
+    "topAnime": [
+      "Sword Art Online",
+      "No Game No Life",
+      "Dr. STONE",
+      "Kono Subarashii Sekai ni Shukufuku wo!",
+      "Sword Art Online II"
+    ]
+  },
+  {
+    "id": 0,
+    "size": 533,
+    "primaryGenre": "Action",
+    "topGenres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
     "topAnime": [
       "Shingeki no Kyojin",
       "Kimetsu no Yaiba",
@@ -12,155 +51,351 @@
     ]
   },
   {
-    "id": 1,
-    "primaryGenre": "Adventure",
-    "size": 95,
-    "topAnime": [
-      "No Game No Life",
-      "Kono Subarashii Sekai ni Shukufuku wo!",
-      "Sen to Chihiro no Kamikakushi",
-      "Mushoku Tensei: Isekai Ittara Honki Dasu",
-      "Made in Abyss"
-    ]
-  },
-  {
-    "id": 2,
-    "primaryGenre": "Comedy",
-    "size": 404,
-    "topAnime": [
-      "Haikyuu!!",
-      "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
-      "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
-      "Toradora!",
-      "Horimiya"
-    ]
-  },
-  {
-    "id": 3,
-    "primaryGenre": "Drama",
-    "size": 212,
-    "topAnime": [
-      "Kimi no Na wa.",
-      "Koe no Katachi",
-      "Yakusoku no Neverland",
-      "Shigatsu wa Kimi no Uso",
-      "Boku dake ga Inai Machi"
-    ]
-  },
-  {
-    "id": 4,
-    "primaryGenre": "Fantasy",
-    "size": 17,
-    "topAnime": [
-      "Paprika",
-      "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen",
-      "Shadows House",
-      "Kinsou no Vermeil: Gakeppuchi Majutsushi wa Saikyou no Yakusai to Mahou Sekai wo Tsuki Susumu",
-      "Mononoke"
-    ]
-  },
-  {
     "id": 5,
-    "primaryGenre": "Horror",
-    "size": 12,
+    "size": 475,
+    "primaryGenre": "Supernatural",
+    "topGenres": [
+      "Supernatural",
+      "Mystery",
+      "Drama"
+    ],
     "topAnime": [
-      "Another",
-      "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei - The Animation",
-      "Higurashi no Naku Koro ni",
-      "Shiki",
-      "Gakkou Gurashi!"
-    ]
-  },
-  {
-    "id": 6,
-    "primaryGenre": "Mystery",
-    "size": 9,
-    "topAnime": [
-      "DEATH NOTE",
-      "Hyouka",
-      "Nazo no Kanojo X",
-      "Shoushimin Series",
-      "Hyouka: Motsubeki Mono wa"
+      "Yakusoku no Neverland",
+      "Ansatsu Kyoushitsu",
+      "Boku dake ga Inai Machi",
+      "Re:Zero kara Hajimeru Isekai Seikatsu",
+      "Steins;Gate"
     ]
   },
   {
     "id": 7,
-    "primaryGenre": "Psychological",
-    "size": 4,
-    "topAnime": [
-      "Gyakkyou Burai Kaiji: Ultimate Survivor",
-      "Liar Liar",
-      "Gyakkyou Burai Kaiji: Hakairoku-hen",
-      "One Outs"
-    ]
-  },
-  {
-    "id": 8,
+    "size": 459,
     "primaryGenre": "Romance",
-    "size": 15,
+    "topGenres": [
+      "Romance",
+      "Comedy",
+      "Slice of Life"
+    ],
     "topAnime": [
-      "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
-      "Yubisaki to Renren",
-      "Ao no Hako",
-      "Tamako Love Story",
-      "Kimi wa Houkago Insomnia"
-    ]
-  },
-  {
-    "id": 9,
-    "primaryGenre": "Sci-Fi",
-    "size": 4,
-    "topAnime": [
-      "Shelter",
-      "Shuumatsu no Harem",
-      "Mahouka Koukou no Rettousei: Hoshi wo Yobu Shoujo",
-      "So Ra No Wo To"
-    ]
-  },
-  {
-    "id": 10,
-    "primaryGenre": "Slice of Life",
-    "size": 15,
-    "topAnime": [
-      "Barakamon",
-      "Non Non Biyori",
-      "Love Live! School idol project",
-      "Demi-chan wa Kataritai",
-      "Usagi Drop"
+      "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+      "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+      "Toradora!",
+      "Horimiya",
+      "Kaguya-sama wa Kokurasetai?: Tensaitachi no Renai Zunousen"
     ]
   },
   {
     "id": 11,
-    "primaryGenre": "Sports",
-    "size": 3,
+    "size": 382,
+    "primaryGenre": "Slice of Life",
+    "topGenres": [
+      "Slice of Life",
+      "Comedy",
+      "Drama"
+    ],
     "topAnime": [
-      "Aoashi",
-      "Diamond no Ace",
-      "Inazuma Eleven"
+      "[Oshi no Ko]",
+      "K-ON!",
+      "Bocchi the Rock!",
+      "3-gatsu no Lion",
+      "Given"
+    ]
+  },
+  {
+    "id": 2,
+    "size": 354,
+    "primaryGenre": "Comedy",
+    "topGenres": [
+      "Comedy",
+      "Slice of Life",
+      "Action"
+    ],
+    "topAnime": [
+      "One Punch Man",
+      "Mob Psycho 100",
+      "SPY×FAMILY",
+      "One Punch Man 2",
+      "Mob Psycho 100 II"
+    ]
+  },
+  {
+    "id": 10,
+    "size": 280,
+    "primaryGenre": "Ecchi",
+    "topGenres": [
+      "Ecchi",
+      "Comedy",
+      "Romance"
+    ],
+    "topAnime": [
+      "High School DxD",
+      "Gakuen Mokushiroku: HIGHSCHOOL OF THE DEAD",
+      "Prison School",
+      "Date A Live",
+      "Rakudai Kishi no Cavalry"
+    ]
+  },
+  {
+    "id": 9,
+    "size": 251,
+    "primaryGenre": "Drama",
+    "topGenres": [
+      "Drama",
+      "Fantasy",
+      "Mahou Shoujo"
+    ],
+    "topAnime": [
+      "Mahou Shoujo Madoka☆Magica",
+      "Wonder Egg Priority",
+      "Shokugeki no Souma: Ni no Sara",
+      "Kiznaiver",
+      "Fruits Basket: 2nd Season"
+    ]
+  },
+  {
+    "id": 4,
+    "size": 211,
+    "primaryGenre": "Drama",
+    "topGenres": [
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "topAnime": [
+      "Kimi no Na wa.",
+      "Koe no Katachi",
+      "Shigatsu wa Kimi no Uso",
+      "Violet Evergarden",
+      "Sen to Chihiro no Kamikakushi"
+    ]
+  },
+  {
+    "id": 6,
+    "size": 185,
+    "primaryGenre": "Sports",
+    "topGenres": [
+      "Sports",
+      "Drama",
+      "Comedy"
+    ],
+    "topAnime": [
+      "Haikyuu!!",
+      "Haikyuu!! 2nd Season",
+      "Haikyuu!!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou",
+      "Blue Lock",
+      "Haikyuu!! TO THE TOP"
     ]
   },
   {
     "id": 12,
-    "primaryGenre": "Unknown",
-    "size": 0,
-    "topAnime": []
+    "size": 96,
+    "primaryGenre": "Action",
+    "topGenres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "topAnime": [
+      "Pocket Monsters",
+      "Yu☆Gi☆Oh! Duel Monsters",
+      "Digimon Adventure",
+      "Pocket Monsters: Mewtwo no Gyakushuu",
+      "Pocket Monsters: THE ORIGIN"
+    ]
   },
   {
-    "id": 13,
-    "primaryGenre": "Unknown",
-    "size": 0,
-    "topAnime": []
+    "id": 8,
+    "size": 75,
+    "primaryGenre": "Action",
+    "topGenres": [
+      "Action",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "topAnime": [
+      "Fate/Zero",
+      "Fate/stay night: Unlimited Blade Works",
+      "Fate/Zero 2nd Season",
+      "Fate/stay night: Unlimited Blade Works 2nd Season",
+      "Sword Art Online: Ordinal Scale"
+    ]
   },
   {
     "id": 14,
-    "primaryGenre": "Unknown",
-    "size": 0,
-    "topAnime": []
+    "size": 53,
+    "primaryGenre": "Hentai",
+    "topGenres": [
+      "Hentai",
+      "Romance",
+      "Comedy"
+    ],
+    "topAnime": [
+      "Overflow",
+      "Yarichin☆Bitch-bu",
+      "euphoria",
+      "A KITE",
+      "Itadaki! Seieki♥"
+    ]
+  },
+  {
+    "id": 18,
+    "size": 29,
+    "primaryGenre": "Mystery",
+    "topGenres": [
+      "Mystery",
+      "Adventure",
+      "Action"
+    ],
+    "topAnime": [
+      "Meitantei Conan: Tokei Jikake no Matenrou",
+      "Meitantei Conan: Baker Street no Bourei",
+      "Meitantei Conan: Seikimatsu no Majutsushi",
+      "Meitantei Conan: Juuyonbanme no Target",
+      "Meitantei Conan: Hitomi no Naka no Ansatsusha"
+    ]
+  },
+  {
+    "id": 13,
+    "size": 8,
+    "primaryGenre": "Sci-Fi",
+    "topGenres": [
+      "Sci-Fi",
+      "Psychological",
+      "Drama"
+    ],
+    "topAnime": [
+      "Shelter",
+      "Idol",
+      "Kawaki wo Ameku",
+      "On Your Mark: CHAGE & ASKA",
+      "Let You Down"
+    ]
   },
   {
     "id": 15,
-    "primaryGenre": "Unknown",
-    "size": 0,
-    "topAnime": []
+    "size": 5,
+    "primaryGenre": "Action",
+    "topGenres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "topAnime": [
+      "Dragon Ball Z: Gekitotsu!! 100-oku Power no Senshi-tachi",
+      "Dragon Ball Z: Chikyuu Marugoto Chou Kessen",
+      "Dragon Ball Z: Super Saiyajin da Son Goku",
+      "Dragon Ball Z: Ora no Gohan wo Kaese!!",
+      "Dragon Ball Z: Konoyo de Ichiban Tsuyoi Yatsu"
+    ]
+  },
+  {
+    "id": 17,
+    "size": 4,
+    "primaryGenre": "Adventure",
+    "topGenres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "topAnime": [
+      "Yu☆Gi☆Oh!: THE DARK SIDE OF DIMENSIONS",
+      "Yu☆Gi☆Oh!: Hikari no Pyramid",
+      "Yu☆Gi☆Oh!: Chou Yuugou! Toki wo Koeta Kizuna",
+      "Yu☆Gi☆Oh! (Movie)"
+    ]
+  },
+  {
+    "id": 21,
+    "size": 4,
+    "primaryGenre": "Comedy",
+    "topGenres": [
+      "Comedy",
+      "Adventure",
+      "Romance"
+    ],
+    "topAnime": [
+      "Pikachu no Natsuyasumi",
+      "Chobits: Chibits - Sumomo, Kotoko Todokeru",
+      "Cardcaptor Sakura: Kero-chan ni Omakase!",
+      "Cardcaptor Sakura: Suteki Desu wa, Sakura-chan! Tomoyo no Cardcaptor Sakura Katsuyaku Video Nikki!"
+    ]
+  },
+  {
+    "id": 16,
+    "size": 2,
+    "primaryGenre": "Action",
+    "topGenres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "topAnime": [
+      "Pocket Monsters Advanced Generation: Nanayo no Negaiboshi Jirachi",
+      "Pocket Monsters Advanced Generation: Pokémon Ranger to Umi no Ouji Manaphy"
+    ]
+  },
+  {
+    "id": 19,
+    "size": 2,
+    "primaryGenre": "Comedy",
+    "topGenres": [
+      "Comedy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "topAnime": [
+      "Mikakunin de Shinkoukei: Kamo Nikutte Midori-ppoi Aji ga suru no ne.",
+      "Mikakunin de Shinkoukei: Mite. Are ga Watashitachi no Tomatteiru Ryokan yo."
+    ]
+  },
+  {
+    "id": 20,
+    "size": 2,
+    "primaryGenre": "Comedy",
+    "topGenres": [
+      "Comedy"
+    ],
+    "topAnime": [
+      "Toaru Majutsu no Index Specials",
+      "Shakugan no Shana Specials"
+    ]
+  },
+  {
+    "id": 22,
+    "size": 2,
+    "primaryGenre": "Fantasy",
+    "topGenres": [
+      "Fantasy"
+    ],
+    "topAnime": [
+      "The Everlasting Guilty Crown",
+      "All Alone With You"
+    ]
+  },
+  {
+    "id": 23,
+    "size": 2,
+    "primaryGenre": "Music",
+    "topGenres": [
+      "Music"
+    ],
+    "topAnime": [
+      "Snow Halation",
+      "Bokura no LIVE Kimi to no LIFE"
+    ]
+  },
+  {
+    "id": 24,
+    "size": 2,
+    "primaryGenre": "Drama",
+    "topGenres": [
+      "Drama",
+      "Romance",
+      "Sports"
+    ],
+    "topAnime": [
+      "Mignon",
+      "Gwahoheup"
+    ]
   }
 ]
