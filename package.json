@@ -25,9 +25,12 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.2",
+    "d3-force": "^3.0.0",
+    "d3-force-reuse": "^1.0.1",
     "graphology": "^0.25.4",
     "graphology-communities-louvain": "^2.0.2",
     "graphology-layout-forceatlas2": "^0.10.1",
+    "lodash": "^4.17.21",
     "pixi-viewport": "^6.0.3",
     "pixi.js": "^8.14.3",
     "vue": "^3.4.0"

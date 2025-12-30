@@ -22,7 +22,9 @@ function buildRecommendationGraph(animeList) {
       popularity: anime.popularity,
       averageScore: anime.averageScore,
       format: anime.format,
-      seasonYear: anime.seasonYear
+      seasonYear: anime.seasonYear,
+      coverImage: anime.coverImage?.large || anime.coverImage?.medium,
+      description: anime.description
     });
   });
 
@@ -175,7 +177,9 @@ function graphToJSON(graph) {
       averageScore: attributes.averageScore,
       format: attributes.format,
       seasonYear: attributes.seasonYear,
-      community: attributes.community
+      community: attributes.community,
+      coverImage: attributes.coverImage,
+      description: attributes.description
     });
   });
 

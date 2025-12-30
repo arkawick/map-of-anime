@@ -15,7 +15,10 @@
       "Bash(npm run collect:*)",
       "WebFetch(domain:www.malmap.net)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(node scripts/generate-layout-hierarchical.js:*)",
+      "Bash(npm run build:*)",
+      "Bash(test:*)"
     ]
   }
 }

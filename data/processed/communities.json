@@ -1,75 +1,24 @@
 [
   {
-    "id": 1,
-    "size": 613,
-    "primaryGenre": "Action",
-    "topGenres": [
-      "Action",
-      "Sci-Fi",
-      "Drama"
-    ],
-    "topAnime": [
-      "DEATH NOTE",
-      "Boku no Hero Academia 2",
-      "Shingeki no Kyojin: The Final Season",
-      "Darling in the Franxx",
-      "Code Geass: Hangyaku no Lelouch"
-    ]
-  },
-  {
-    "id": 3,
-    "size": 555,
-    "primaryGenre": "Fantasy",
-    "topGenres": [
-      "Fantasy",
-      "Adventure",
-      "Action"
-    ],
-    "topAnime": [
-      "Sword Art Online",
-      "No Game No Life",
-      "Dr. STONE",
-      "Kono Subarashii Sekai ni Shukufuku wo!",
-      "Sword Art Online II"
-    ]
-  },
-  {
     "id": 0,
-    "size": 533,
+    "size": 227,
     "primaryGenre": "Action",
     "topGenres": [
       "Action",
-      "Adventure",
-      "Fantasy"
+      "Drama",
+      "Mystery"
     ],
     "topAnime": [
       "Shingeki no Kyojin",
-      "Kimetsu no Yaiba",
-      "Jujutsu Kaisen",
-      "Boku no Hero Academia",
-      "HUNTER×HUNTER (2011)"
+      "DEATH NOTE",
+      "Tokyo Ghoul",
+      "Shingeki no Kyojin Season 2",
+      "Shingeki no Kyojin Season 3"
     ]
   },
   {
-    "id": 5,
-    "size": 475,
-    "primaryGenre": "Supernatural",
-    "topGenres": [
-      "Supernatural",
-      "Mystery",
-      "Drama"
-    ],
-    "topAnime": [
-      "Yakusoku no Neverland",
-      "Ansatsu Kyoushitsu",
-      "Boku dake ga Inai Machi",
-      "Re:Zero kara Hajimeru Isekai Seikatsu",
-      "Steins;Gate"
-    ]
-  },
-  {
-    "id": 7,
-    "size": 459,
+    "id": 6,
+    "size": 162,
     "primaryGenre": "Romance",
     "topGenres": [
       "Romance",
@@ -85,81 +34,47 @@
     ]
   },
   {
-    "id": 11,
-    "size": 382,
-    "primaryGenre": "Slice of Life",
+    "id": 3,
+    "size": 149,
+    "primaryGenre": "Fantasy",
     "topGenres": [
-      "Slice of Life",
-      "Comedy",
-      "Drama"
-    ],
-    "topAnime": [
-      "[Oshi no Ko]",
-      "K-ON!",
-      "Bocchi the Rock!",
-      "3-gatsu no Lion",
-      "Given"
-    ]
-  },
-  {
-    "id": 2,
-    "size": 354,
-    "primaryGenre": "Comedy",
-    "topGenres": [
-      "Comedy",
-      "Slice of Life",
-      "Action"
-    ],
-    "topAnime": [
-      "One Punch Man",
-      "Mob Psycho 100",
-      "SPY×FAMILY",
-      "One Punch Man 2",
-      "Mob Psycho 100 II"
-    ]
-  },
-  {
-    "id": 10,
-    "size": 280,
-    "primaryGenre": "Ecchi",
-    "topGenres": [
-      "Ecchi",
-      "Comedy",
-      "Romance"
-    ],
-    "topAnime": [
-      "High School DxD",
-      "Gakuen Mokushiroku: HIGHSCHOOL OF THE DEAD",
-      "Prison School",
-      "Date A Live",
-      "Rakudai Kishi no Cavalry"
-    ]
-  },
-  {
-    "id": 9,
-    "size": 251,
-    "primaryGenre": "Drama",
-    "topGenres": [
-      "Drama",
       "Fantasy",
-      "Mahou Shoujo"
+      "Action",
+      "Adventure"
     ],
     "topAnime": [
-      "Mahou Shoujo Madoka☆Magica",
-      "Wonder Egg Priority",
-      "Shokugeki no Souma: Ni no Sara",
-      "Kiznaiver",
-      "Fruits Basket: 2nd Season"
+      "Sword Art Online",
+      "No Game No Life",
+      "Dr. STONE",
+      "Kono Subarashii Sekai ni Shukufuku wo!",
+      "Sword Art Online II"
+    ]
+  },
+  {
+    "id": 1,
+    "size": 122,
+    "primaryGenre": "Action",
+    "topGenres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "topAnime": [
+      "Kimetsu no Yaiba",
+      "Jujutsu Kaisen",
+      "Boku no Hero Academia",
+      "HUNTER×HUNTER (2011)",
+      "ONE PIECE"
     ]
   },
   {
     "id": 4,
-    "size": 211,
+    "size": 91,
     "primaryGenre": "Drama",
     "topGenres": [
       "Drama",
       "Romance",
-      "Slice of Life"
+      "Fantasy"
     ],
     "topAnime": [
       "Kimi no Na wa.",
@@ -170,232 +85,54 @@
     ]
   },
   {
-    "id": 6,
-    "size": 185,
-    "primaryGenre": "Sports",
-    "topGenres": [
-      "Sports",
-      "Drama",
-      "Comedy"
-    ],
-    "topAnime": [
-      "Haikyuu!!",
-      "Haikyuu!! 2nd Season",
-      "Haikyuu!!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou",
-      "Blue Lock",
-      "Haikyuu!! TO THE TOP"
-    ]
-  },
-  {
-    "id": 12,
-    "size": 96,
-    "primaryGenre": "Action",
-    "topGenres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "topAnime": [
-      "Pocket Monsters",
-      "Yu☆Gi☆Oh! Duel Monsters",
-      "Digimon Adventure",
-      "Pocket Monsters: Mewtwo no Gyakushuu",
-      "Pocket Monsters: THE ORIGIN"
-    ]
-  },
-  {
-    "id": 8,
-    "size": 75,
-    "primaryGenre": "Action",
-    "topGenres": [
-      "Action",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "topAnime": [
-      "Fate/Zero",
-      "Fate/stay night: Unlimited Blade Works",
-      "Fate/Zero 2nd Season",
-      "Fate/stay night: Unlimited Blade Works 2nd Season",
-      "Sword Art Online: Ordinal Scale"
-    ]
-  },
-  {
-    "id": 14,
-    "size": 53,
-    "primaryGenre": "Hentai",
-    "topGenres": [
-      "Hentai",
-      "Romance",
-      "Comedy"
-    ],
-    "topAnime": [
-      "Overflow",
-      "Yarichin☆Bitch-bu",
-      "euphoria",
-      "A KITE",
-      "Itadaki! Seieki♥"
-    ]
-  },
-  {
-    "id": 18,
-    "size": 29,
-    "primaryGenre": "Mystery",
-    "topGenres": [
-      "Mystery",
-      "Adventure",
-      "Action"
-    ],
-    "topAnime": [
-      "Meitantei Conan: Tokei Jikake no Matenrou",
-      "Meitantei Conan: Baker Street no Bourei",
-      "Meitantei Conan: Seikimatsu no Majutsushi",
-      "Meitantei Conan: Juuyonbanme no Target",
-      "Meitantei Conan: Hitomi no Naka no Ansatsusha"
-    ]
-  },
-  {
-    "id": 13,
-    "size": 8,
-    "primaryGenre": "Sci-Fi",
-    "topGenres": [
-      "Sci-Fi",
-      "Psychological",
-      "Drama"
-    ],
-    "topAnime": [
-      "Shelter",
-      "Idol",
-      "Kawaki wo Ameku",
-      "On Your Mark: CHAGE & ASKA",
-      "Let You Down"
-    ]
-  },
-  {
-    "id": 15,
-    "size": 5,
-    "primaryGenre": "Action",
-    "topGenres": [
-      "Action",
-      "Adventure",
-      "Sci-Fi"
-    ],
-    "topAnime": [
-      "Dragon Ball Z: Gekitotsu!! 100-oku Power no Senshi-tachi",
-      "Dragon Ball Z: Chikyuu Marugoto Chou Kessen",
-      "Dragon Ball Z: Super Saiyajin da Son Goku",
-      "Dragon Ball Z: Ora no Gohan wo Kaese!!",
-      "Dragon Ball Z: Konoyo de Ichiban Tsuyoi Yatsu"
-    ]
-  },
-  {
-    "id": 17,
-    "size": 4,
-    "primaryGenre": "Adventure",
-    "topGenres": [
-      "Adventure",
-      "Fantasy",
-      "Action"
-    ],
-    "topAnime": [
-      "Yu☆Gi☆Oh!: THE DARK SIDE OF DIMENSIONS",
-      "Yu☆Gi☆Oh!: Hikari no Pyramid",
-      "Yu☆Gi☆Oh!: Chou Yuugou! Toki wo Koeta Kizuna",
-      "Yu☆Gi☆Oh! (Movie)"
-    ]
-  },
-  {
-    "id": 21,
-    "size": 4,
+    "id": 2,
+    "size": 79,
     "primaryGenre": "Comedy",
     "topGenres": [
       "Comedy",
-      "Adventure",
-      "Romance"
+      "Slice of Life",
+      "Action"
     ],
     "topAnime": [
-      "Pikachu no Natsuyasumi",
-      "Chobits: Chibits - Sumomo, Kotoko Todokeru",
-      "Cardcaptor Sakura: Kero-chan ni Omakase!",
-      "Cardcaptor Sakura: Suteki Desu wa, Sakura-chan! Tomoyo no Cardcaptor Sakura Katsuyaku Video Nikki!"
+      "One Punch Man",
+      "Mob Psycho 100",
+      "SPY×FAMILY",
+      "Mob Psycho 100 II",
+      "Saiki Kusuo no Ψ-nan"
     ]
   },
   {
-    "id": 16,
-    "size": 2,
-    "primaryGenre": "Action",
-    "topGenres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "topAnime": [
-      "Pocket Monsters Advanced Generation: Nanayo no Negaiboshi Jirachi",
-      "Pocket Monsters Advanced Generation: Pokémon Ranger to Umi no Ouji Manaphy"
-    ]
-  },
-  {
-    "id": 19,
-    "size": 2,
-    "primaryGenre": "Comedy",
-    "topGenres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "topAnime": [
-      "Mikakunin de Shinkoukei: Kamo Nikutte Midori-ppoi Aji ga suru no ne.",
-      "Mikakunin de Shinkoukei: Mite. Are ga Watashitachi no Tomatteiru Ryokan yo."
-    ]
-  },
-  {
-    "id": 20,
-    "size": 2,
-    "primaryGenre": "Comedy",
-    "topGenres": [
-      "Comedy"
-    ],
-    "topAnime": [
-      "Toaru Majutsu no Index Specials",
-      "Shakugan no Shana Specials"
-    ]
-  },
-  {
-    "id": 22,
-    "size": 2,
-    "primaryGenre": "Fantasy",
-    "topGenres": [
-      "Fantasy"
-    ],
-    "topAnime": [
-      "The Everlasting Guilty Crown",
-      "All Alone With You"
-    ]
-  },
-  {
-    "id": 23,
-    "size": 2,
-    "primaryGenre": "Music",
-    "topGenres": [
-      "Music"
-    ],
-    "topAnime": [
-      "Snow Halation",
-      "Bokura no LIVE Kimi to no LIFE"
-    ]
-  },
-  {
-    "id": 24,
-    "size": 2,
+    "id": 5,
+    "size": 62,
     "primaryGenre": "Drama",
     "topGenres": [
       "Drama",
-      "Romance",
-      "Sports"
+      "Comedy",
+      "Slice of Life"
     ],
     "topAnime": [
-      "Mignon",
-      "Gwahoheup"
+      "Haikyuu!!",
+      "Shokugeki no Souma",
+      "Haikyuu!! 2nd Season",
+      "Haikyuu!!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou",
+      "Blue Lock"
+    ]
+  },
+  {
+    "id": 7,
+    "size": 50,
+    "primaryGenre": "Ecchi",
+    "topGenres": [
+      "Ecchi",
+      "Romance",
+      "Comedy"
+    ],
+    "topAnime": [
+      "High School DxD",
+      "Gakuen Mokushiroku: HIGHSCHOOL OF THE DEAD",
+      "Prison School",
+      "Date A Live",
+      "Rakudai Kishi no Cavalry"
     ]
   }
 ]

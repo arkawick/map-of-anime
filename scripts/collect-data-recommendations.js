@@ -33,6 +33,11 @@ query ($page: Int, $perPage: Int) {
         english
         native
       }
+      coverImage {
+        large
+        medium
+      }
+      description
       format
       status
       genres
